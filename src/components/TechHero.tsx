@@ -1,5 +1,9 @@
 import React from "react";
 import { ArrowDown } from "lucide-react";
+import { Link as RouterLink } from "react-router-dom";
+
+// Image URL handling improvement
+const TECH_HERO_BG = new URL('../../public/bg/technology-hero.jpg', import.meta.url).href;
 
 export default function TechHero() {
   const scrollToContent = () => {
@@ -13,7 +17,7 @@ export default function TechHero() {
     <section
       className="relative min-h-[70vh] flex items-center justify-center"
       style={{
-        backgroundImage: "linear-gradient(to top, rgba(14, 61, 76, 0.9), rgba(14, 61, 76, 0.7)), url('./bg/technology-hero.jpg')",
+        backgroundImage: `linear-gradient(to top, rgba(14, 61, 76, 0.9), rgba(14, 61, 76, 0.7)), url(${TECH_HERO_BG})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         fontFamily: "Merriweather, serif",
@@ -30,18 +34,18 @@ export default function TechHero() {
           Our satellite-based analytics engine reduces infrastructure failure risk by 40% and accelerates financing timelines by 3x.
         </p>
         <div className="flex flex-wrap justify-center gap-6">
-          <a 
-            href="#marketplace" 
+          <button 
+            onClick={() => document.getElementById("marketplace")?.scrollIntoView({ behavior: "smooth" })}
             className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-md font-bold text-base transition-all shadow-lg"
           >
             Explore Data Marketplace
-          </a>
-          <a 
-            href="#pipeline" 
+          </button>
+          <button 
+            onClick={() => document.getElementById("data-pipeline")?.scrollIntoView({ behavior: "smooth" })}
             className="border-2 border-white/80 hover:border-white hover:bg-white/10 text-white px-8 py-4 rounded-md font-bold text-base transition-all"
           >
             View Processing Pipeline
-          </a>
+          </button>
         </div>
         
         {/* Key Metrics Banner - Improved spacing and clarity */}

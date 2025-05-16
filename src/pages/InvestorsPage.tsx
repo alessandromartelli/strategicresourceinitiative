@@ -6,6 +6,9 @@ import CompetitiveAdvantage from "../components/CompetitiveAdvantage";
 import CaseStudies from "../components/CaseStudies";
 import PricingModel from "../components/PricingModel";
 
+// Image URL handling improvement
+const INVESTOR_HERO_BG = new URL('../../public/bg/investor-hero.jpg', import.meta.url).href;
+
 export default function InvestorsPage() {
   return (
     <div>
@@ -13,7 +16,7 @@ export default function InvestorsPage() {
       <section
         className="relative min-h-[60vh] flex items-center justify-center"
         style={{
-          backgroundImage: "linear-gradient(to top, rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.6)), url('./bg/investor-hero.jpg')",
+          backgroundImage: `linear-gradient(to top, rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.6)), url(${INVESTOR_HERO_BG})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
