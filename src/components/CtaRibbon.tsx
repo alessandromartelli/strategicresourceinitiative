@@ -1,5 +1,7 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 interface CtaRibbonProps {
   className?: string;
@@ -18,25 +20,29 @@ export default function CtaRibbon({
 }: CtaRibbonProps) {
   return (
     <div 
-      className={`bg-slate-800 py-8 border-l-4 border-gradient-to-b from-[#d98c3e] to-[#b36d4f] ${className}`}
-      style={{ 
-        borderImage: 'linear-gradient(to bottom, #d98c3e, #b36d4f) 1'
-      }}
+      className={`bg-primary-800 py-12 shadow-lg ${className}`}
     >
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <div>
-          {title && <h3 className="text-white text-xl font-semibold mb-2">{title}</h3>}
-          <p className="text-white/80 text-lg">
-            {description}
-          </p>
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 relative">
+          {/* Left accent bar */}
+          <div className="absolute left-0 top-0 bottom-0 w-1 md:w-2 bg-gradient-to-b from-accent to-accent/70 rounded-r"></div>
+          
+          <div className="pl-4 md:pl-8">
+            {title && <h3 className="text-white text-2xl font-bold mb-3" style={{ fontFamily: "Merriweather, serif" }}>{title}</h3>}
+            <p className="text-white/90 text-lg max-w-2xl">
+              {description}
+            </p>
+          </div>
+          
+          <Link 
+            to={buttonLink} 
+            className="group flex items-center gap-2 bg-accent hover:bg-accent-600 text-white px-8 py-4 rounded-md font-bold transition-all shadow-md whitespace-nowrap"
+          >
+            {buttonText}
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
-        <Link 
-          to={buttonLink} 
-          className="bg-[var(--clr-accent,#d98c3e)] hover:bg-[var(--clr-accent,#d98c3e)]/90 text-white px-6 py-3 rounded-lg font-bold transition-colors duration-300 mt-4 md:mt-0"
-        >
-          {buttonText}
-        </Link>
       </div>
     </div>
   );
-} 
+}
