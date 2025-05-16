@@ -13,7 +13,7 @@ export default function InvestorsPage() {
       <section
         className="relative min-h-[60vh] flex items-center justify-center"
         style={{
-          backgroundImage: "linear-gradient(to top, rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.6)), url('/bg/investor-hero.jpg')",
+          backgroundImage: "linear-gradient(to top, rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.6)), url('./bg/investor-hero.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

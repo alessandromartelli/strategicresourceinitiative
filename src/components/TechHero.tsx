@@ -1,4 +1,3 @@
-
 import React from "react";
 import { ArrowDown } from "lucide-react";
 
@@ -14,7 +13,7 @@ export default function TechHero() {
     <section
       className="relative min-h-[70vh] flex items-center justify-center"
       style={{
-        backgroundImage: "linear-gradient(to top, rgba(14, 61, 76, 0.9), rgba(14, 61, 76, 0.7)), url('/bg/technology-hero.jpg')",
+        backgroundImage: "linear-gradient(to top, rgba(14, 61, 76, 0.9), rgba(14, 61, 76, 0.7)), url('./bg/technology-hero.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         fontFamily: "Merriweather, serif",
