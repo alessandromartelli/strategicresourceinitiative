@@ -1,3 +1,4 @@
+import React from 'react';
 
 export const RADIAN = Math.PI / 180;
 
@@ -12,4 +13,4 @@ export const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadi
       {`${(percent * 100).toFixed(0)}%`}
     </text>
   );
-};
+}; 
