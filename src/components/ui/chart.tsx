@@ -1,4 +1,3 @@
-
 import * as React from "react"
 import * as RechartsPrimitive from "recharts"
 
@@ -18,7 +17,7 @@ export type ChartConfig = {
 }
 
 // Define a proper payload type to fix the TypeScript error
-interface EnhancedPayload extends RechartsPrimitive.Payload {
+interface EnhancedPayload {
   dataKey?: string;
   name?: string;
   value?: any;
