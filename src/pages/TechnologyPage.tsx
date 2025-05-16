@@ -11,6 +11,7 @@ import CompetitiveAdvantage from "../components/CompetitiveAdvantage";
 import CaseStudies from "../components/CaseStudies";
 import PricingModel from "../components/PricingModel";
 import DataInsightsDashboard from "../components/DataInsightsDashboard";
+import PrimaryCta from "../components/PrimaryCta";
 
 export default function TechnologyPage() {
   return (
