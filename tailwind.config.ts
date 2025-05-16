@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -26,15 +25,45 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#0E3D4C', // Deep slate-teal
+					DEFAULT: 'var(--clr-primary)',
+					50: 'var(--clr-primary-50)',
+					100: 'var(--clr-primary-100)',
+					200: 'var(--clr-primary-200)',
+					300: 'var(--clr-primary-300)',
+					400: 'var(--clr-primary-400)',
+					500: 'var(--clr-primary-500)',
+					600: 'var(--clr-primary-600)',
+					700: 'var(--clr-primary-700)',
+					800: 'var(--clr-primary-800)',
+					900: 'var(--clr-primary-900)',
 					foreground: '#ffffff'
 				},
 				secondary: {
-					DEFAULT: '#D2BA9C', // Sandstone
-					foreground: '#0E3D4C'
+					DEFAULT: 'var(--clr-secondary)',
+					50: 'var(--clr-secondary-50)',
+					100: 'var(--clr-secondary-100)',
+					200: 'var(--clr-secondary-200)',
+					300: 'var(--clr-secondary-300)',
+					400: 'var(--clr-secondary-400)',
+					500: 'var(--clr-secondary-500)',
+					600: 'var(--clr-secondary-600)',
+					700: 'var(--clr-secondary-700)',
+					800: 'var(--clr-secondary-800)',
+					900: 'var(--clr-secondary-900)',
+					foreground: '#111111'
 				},
 				accent: {
-					DEFAULT: '#99C221', // Low-carbon lime
+					DEFAULT: 'var(--clr-accent)',
+					50: 'var(--clr-accent-50)',
+					100: 'var(--clr-accent-100)',
+					200: 'var(--clr-accent-200)',
+					300: 'var(--clr-accent-300)',
+					400: 'var(--clr-accent-400)',
+					500: 'var(--clr-accent-500)',
+					600: 'var(--clr-accent-600)',
+					700: 'var(--clr-accent-700)',
+					800: 'var(--clr-accent-800)',
+					900: 'var(--clr-accent-900)',
 					foreground: '#ffffff'
 				},
 				destructive: {
@@ -42,36 +71,44 @@ export default {
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: 'var(--muted)',
+					foreground: 'var(--muted-foreground)'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
 				},
 				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					DEFAULT: '#FFFFFF',
+					foreground: '#111111'
 				},
 				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+					DEFAULT: '#FFFFFF',
+					foreground: '#111111',
+					primary: '#111111',
+					'primary-foreground': '#FFFFFF',
+					accent: '#2563EB',
+					'accent-foreground': '#FFFFFF',
+					border: '#E5E7EB',
+					ring: '#2563EB'
 				}
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: '16px',
+				md: '12px',
+				sm: '8px'
 			},
 			fontFamily: {
-				merriweather: ['Merriweather', 'serif'],
-				inter: ['Inter', 'sans-serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				display: ['Sora', 'system-ui', 'sans-serif'],
+			},
+			fontSize: {
+				'display-1': ['72px', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
+				'display-2': ['56px', { lineHeight: '1.2', letterSpacing: '-0.02em' }],
+				'display-3': ['40px', { lineHeight: '1.3', letterSpacing: '-0.01em' }],
+				'body-1': ['20px', { lineHeight: '1.6' }],
+				'body-2': ['18px', { lineHeight: '1.6' }],
+				'body-3': ['16px', { lineHeight: '1.6' }],
 			},
 			keyframes: {
 				'accordion-down': {
@@ -89,12 +126,21 @@ export default {
 					'0%': { opacity: '0' },
 					'100%': { opacity: '1' },
 				},
+				'slide-up': {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' },
+				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'scroll': 'scroll 20s linear infinite',
-				'fade-in': 'fade-in 0.5s ease-out'
+				'fade-in': 'fade-in 0.5s ease-out',
+				'slide-up': 'slide-up 0.5s ease-out'
+			},
+			spacing: {
+				'18': '4.5rem',
+				'22': '5.5rem',
 			}
 		}
 	},

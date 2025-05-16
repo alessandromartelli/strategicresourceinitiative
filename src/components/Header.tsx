@@ -1,11 +1,21 @@
-
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -15,33 +25,71 @@ const Header = () => {
     setMobileMenuOpen(false);
   };
 
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
+
+  const navLinks = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About Us" },
+    { path: "/services", label: "Services" },
+    { path: "/sectors", label: "Sectors" },
+    { path: "/process", label: "Process" },
+    { path: "/technology", label: "Technology" },
+    { path: "/credentials", label: "Credentials" },
+    { path: "/team", label: "Team" },
+    { path: "/investors", label: "Investors" },
+    { path: "/contact", label: "Contact" },
+  ];
+
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+      }`}
+    >
+      <div className="container">
+        <div className="flex items-center justify-between h-24">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <span className="text-primary font-merriweather text-xl font-bold">SRI</span>
+              <span className="text-2xl font-medium tracking-tight">SRI</span>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-primary hover:text-accent transition-colors font-medium">Home</Link>
-            <Link to="/about" className="text-primary hover:text-accent transition-colors font-medium">About Us</Link>
-            <Link to="/services" className="text-primary hover:text-accent transition-colors font-medium">Services</Link>
-            <Link to="/sectors" className="text-primary hover:text-accent transition-colors font-medium">Sectors</Link>
-            <Link to="/process" className="text-primary hover:text-accent transition-colors font-medium">Process</Link>
-            <Link to="/credentials" className="text-primary hover:text-accent transition-colors font-medium">Credentials</Link>
-            <Link to="/team" className="text-primary hover:text-accent transition-colors font-medium">Team</Link>
-            <Link to="/contact" className="text-primary hover:text-accent transition-colors font-medium">Contact</Link>
+          <nav className="hidden md:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`text-sm font-medium transition-colors ${
+                  isActive(link.path)
+                    ? "text-accent"
+                    : "text-foreground hover:text-accent"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Button className="btn-accent">
+              Get Started
+            </Button>
           </nav>
           
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="outline" size="icon" onClick={toggleMobileMenu}>
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Open menu</span>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleMobileMenu}
+              className="text-foreground hover:text-accent"
+            >
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+              <span className="sr-only">Toggle menu</span>
             </Button>
           </div>
         </div>
@@ -50,69 +98,35 @@ const Header = () => {
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="md:hidden fixed inset-0 z-50 bg-white">
-          <div className="pt-16 pb-6 px-4 space-y-6">
-            <button 
-              className="absolute top-4 right-4 text-2xl"
-              onClick={closeMobileMenu}
-            >
-              ×
-            </button>
-            <Link 
-              to="/" 
-              className="block text-primary hover:text-accent text-lg py-2" 
-              onClick={closeMobileMenu}
-            >
-              Home
-            </Link>
-            <Link 
-              to="/about" 
-              className="block text-primary hover:text-accent text-lg py-2" 
-              onClick={closeMobileMenu}
-            >
-              About Us
-            </Link>
-            <Link 
-              to="/services" 
-              className="block text-primary hover:text-accent text-lg py-2" 
-              onClick={closeMobileMenu}
-            >
-              Services
-            </Link>
-            <Link 
-              to="/sectors" 
-              className="block text-primary hover:text-accent text-lg py-2" 
-              onClick={closeMobileMenu}
-            >
-              Sectors
-            </Link>
-            <Link 
-              to="/process" 
-              className="block text-primary hover:text-accent text-lg py-2" 
-              onClick={closeMobileMenu}
-            >
-              Process
-            </Link>
-            <Link 
-              to="/credentials" 
-              className="block text-primary hover:text-accent text-lg py-2" 
-              onClick={closeMobileMenu}
-            >
-              Credentials
-            </Link>
-            <Link 
-              to="/team" 
-              className="block text-primary hover:text-accent text-lg py-2" 
-              onClick={closeMobileMenu}
-            >
-              Team
-            </Link>
-            <Link 
-              to="/contact" 
-              className="block text-primary hover:text-accent text-lg py-2" 
-              onClick={closeMobileMenu}
-            >
-              Contact
-            </Link>
+          <div className="container pt-24 pb-6 space-y-6">
+            <div className="absolute top-4 right-4">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={closeMobileMenu}
+                className="text-foreground hover:text-accent"
+              >
+                <X className="h-6 w-6" />
+                <span className="sr-only">Close menu</span>
+              </Button>
+            </div>
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`block text-lg font-medium transition-colors ${
+                  isActive(link.path)
+                    ? "text-accent"
+                    : "text-foreground hover:text-accent"
+                }`}
+                onClick={closeMobileMenu}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Button className="btn-accent w-full mt-6">
+              Get Started
+            </Button>
           </div>
         </div>
       )}
