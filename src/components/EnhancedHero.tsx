@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import GlobeVisualization from "./GlobeVisualization";
@@ -54,7 +55,7 @@ export default function EnhancedHero() {
   };
 
   return (
-    <section className="relative min-h-[90vh] bg-gradient-to-b from-primary-900 to-primary-800 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-b from-primary-900 to-primary-800 overflow-hidden pt-24">
       {/* Background globe visualization */}
       <div className="absolute inset-0 opacity-40">
         <GlobeVisualization />
@@ -124,8 +125,8 @@ export default function EnhancedHero() {
       
       {/* Curved separator */}
       <div className="absolute bottom-0 left-0 right-0">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none">
-          <path d="M0 80H1440V0C1295.19 53.7721 1125.6 80 948.943 80C772.283 80 591.497 53.7721 446.686 0C301.876 0 143.876 26.8861 0 80H0Z" fill="white" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" preserveAspectRatio="none" className="w-full h-20">
+          <path d="M0 80H80V0C71.6 40.3 42.8 80 20 80C8.9 80 0 71.1 0 80Z" fill="white" />
         </svg>
       </div>
     </section>

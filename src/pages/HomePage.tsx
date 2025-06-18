@@ -17,7 +17,7 @@ const HomePage = () => {
       <EnhancedHero />
 
       {/* Main Content Start - Adding an ID for scroll navigation */}
-      <div id="main-content">
+      <div id="main-content" className="relative z-10">
         {/* Stats Ticker */}
         <section className="bg-secondary py-16">
           <div className="container overflow-hidden">
@@ -51,7 +51,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* Our Solutions Section (Mantle Labs style) */}
+        {/* Our Solutions Section */}
         <section className="bg-white py-24 border-t border-b border-gray-100">
           <div className="container">
             <div className="max-w-2xl mx-auto text-center mb-16">
@@ -60,6 +60,7 @@ const HomePage = () => {
                 Explore our suite of advanced solutions designed to drive sustainable growth and climate resilience.
               </p>
             </div>
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Solution 1 */}
               <div className="card p-8 flex flex-col items-center text-center card-hover">
