@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import CTA from "@/components/CTA";
@@ -155,8 +154,8 @@ const SectorsPage = () => {
               </div>
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=80" 
-                  alt="Geotechnical infrastructure"
+                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80" 
+                  alt="Strategic consulting and planning"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -211,8 +210,8 @@ const SectorsPage = () => {
               </div>
               <div className="md:order-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&q=80" 
-                  alt="Sustainable mobility"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" 
+                  alt="Strategic advisory session"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -267,8 +266,8 @@ const SectorsPage = () => {
               </div>
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" 
-                  alt="Climate resilient infrastructure"
+                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80" 
+                  alt="Climate advisory and strategy"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -323,8 +322,8 @@ const SectorsPage = () => {
               </div>
               <div className="md:order-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800&q=80" 
-                  alt="Mining operations"
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" 
+                  alt="Strategic analysis and consulting"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -379,8 +378,8 @@ const SectorsPage = () => {
               </div>
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=800&q=80" 
-                  alt="ESG and climate finance"
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+                  alt="Financial advisory and analysis"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -435,8 +434,8 @@ const SectorsPage = () => {
               </div>
               <div className="md:order-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=800&q=80" 
-                  alt="Capacity building"
+                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" 
+                  alt="Strategic development consulting"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
