@@ -39,17 +39,14 @@ const Footer = () => {
               <li><Link to="/about" className="text-muted-foreground hover:text-accent transition-colors">About Us</Link></li>
               <li><Link to="/services" className="text-muted-foreground hover:text-accent transition-colors">Services</Link></li>
               <li><Link to="/sectors" className="text-muted-foreground hover:text-accent transition-colors">Sectors</Link></li>
-              <li><Link to="/process" className="text-muted-foreground hover:text-accent transition-colors">Process</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-sm font-medium mb-4">Resources</h3>
             <ul className="space-y-3">
-              <li><Link to="/credentials" className="text-muted-foreground hover:text-accent transition-colors">Credentials</Link></li>
-              <li><Link to="/team" className="text-muted-foreground hover:text-accent transition-colors">Our Team</Link></li>
-              <li><a href="#" className="text-muted-foreground hover:text-accent transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-accent transition-colors">Terms of Service</a></li>
+              <li><Link to="/privacy-policy" className="text-muted-foreground hover:text-accent transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service" className="text-muted-foreground hover:text-accent transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
           
@@ -97,7 +94,7 @@ const Footer = () => {
       </div>
       
       {/* Cookie Consent Banner */}
-      <div className="fixed bottom-0 left-0 right-0 bg-background border-t border-border p-4 shadow-lg z-50">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-border p-4 shadow-lg z-50">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
             This website uses cookies to ensure you get the best experience on our website.

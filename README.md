@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# Strategic Resources Initiatives (SRI) Website
 
-## Project info
+A modern, optimized React website built with Vite, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/2d0f9869-5b3d-45d2-8af9-461af4e48e82
+## 🚀 Quick Start
 
-## How can I edit this code?
+### Development
+```bash
+# Install dependencies
+npm install
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/2d0f9869-5b3d-45d2-8af9-461af4e48e82) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
+The website will open automatically at `http://localhost:3000`
 
-**Edit a file directly in GitHub**
+### Production
+```bash
+# Build and preview production version
+npm run start
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Optimized Build
 
-**Use GitHub Codespaces**
+The project includes several optimizations:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Code Splitting**: Automatic chunk splitting for better loading performance
+- **Minification**: Terser-based minification with console removal in production
+- **Asset Optimization**: Optimized asset handling and inline limits
+- **Dependency Pre-bundling**: Key dependencies are pre-bundled for faster dev startup
 
-## What technologies are used for this project?
+### Build Output
+- `react-vendor`: React core libraries (~140KB)
+- `router`: React Router (~20KB)  
+- `ui-lib`: Radix UI components (~67KB)
+- `animations`: Framer Motion & GSAP (~182KB)
+- `charts`: Recharts & D3 (~412KB)
+- `three`: Three.js (~461KB)
 
-This project is built with:
+## 🛠 Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run start` - Build and start production server
+- `npm run lint` - Run ESLint
 
-## How can I deploy this project?
+## 🏗 Architecture
 
-Simply open [Lovable](https://lovable.dev/projects/2d0f9869-5b3d-45d2-8af9-461af4e48e82) and click on Share -> Publish.
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite 5 with SWC
+- **Styling**: Tailwind CSS with custom components
+- **UI Components**: Radix UI primitives
+- **Routing**: React Router v6
+- **Animations**: Framer Motion & GSAP
+- **Charts**: Recharts & D3
+- **3D Graphics**: Three.js
 
-## Can I connect a custom domain to my Lovable project?
+## 🎯 Performance Features
 
-Yes, you can!
+- Lazy loading for route components
+- Optimized chunk splitting
+- Asset compression and optimization
+- Modern ES modules
+- Fast refresh in development
+- Production-ready minification
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🌐 Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+The website is optimized for deployment on any static hosting service. The build output in `dist/` can be served directly.
+
+---
+
+Built for Strategic Resources Initiatives
