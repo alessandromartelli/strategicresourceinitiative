@@ -2,6 +2,14 @@
 
 A modern, optimized React website built with Vite, TypeScript, and Tailwind CSS.
 
+## Features
+
+- Modern, responsive design
+- Professional SRI branding
+- Comprehensive service pages
+- Privacy Policy and Terms of Service
+- SEO optimized
+
 ## 🚀 Quick Start
 
 ### Development
@@ -69,6 +77,6 @@ The project includes several optimizations:
 
 The website is optimized for deployment on any static hosting service. The build output in `dist/` can be served directly.
 
----
+This site is deployed on Vercel with automatic deployments from the main branch.
 
 Built for Strategic Resources Initiatives
