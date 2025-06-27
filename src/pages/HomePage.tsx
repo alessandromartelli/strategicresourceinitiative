@@ -93,111 +93,102 @@ const HomePage = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Strategic Approach</h3>
                 <p className="text-muted-foreground">
-                  Comprehensive advisory services from concept development to implementation support.
+                  Results-oriented approach with measurable impact on project success and financial returns.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Services Section */}
-        <section className="py-20 bg-gray-50">
+        {/* Impact Section */}
+        <section className="py-20 bg-secondary">
           <div className="container">
-            <div className="max-w-2xl mx-auto text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-              <p className="text-lg text-muted-foreground">
-                Comprehensive solutions for sustainable infrastructure development.
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold mb-4">Our Impact</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Proven track record of successful project implementation and sustainable development outcomes.
               </p>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Advisory */}
-              <div className="bg-white rounded-lg p-6 text-center hover:shadow-md transition-shadow">
-                <div className="h-12 w-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-3">Advisory</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Strategic consulting for infrastructure development and implementation.
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-accent mb-2">$4.2B</div>
+                <div className="text-muted-foreground">Projects Unlocked</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-accent mb-2">27,000km</div>
+                <div className="text-muted-foreground">Climate-Proofed Roads</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-accent mb-2">6</div>
+                <div className="text-muted-foreground">Specialist Sectors</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-accent mb-2">15+</div>
+                <div className="text-muted-foreground">Years Experience</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Preview */}
+        <section className="py-20">
+          <div className="container">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold mb-4">Our Services</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Comprehensive advisory services across the infrastructure development lifecycle.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="text-center p-6 rounded-lg border">
+                <h3 className="text-xl font-semibold mb-3">Sector Advisory</h3>
+                <p className="text-muted-foreground mb-4">
+                  Expert guidance on sector strategy, technical due diligence, and project development.
                 </p>
-                <Link to="/services" className="text-accent hover:text-accent/80 font-medium text-sm">
-                  Learn more →
+                <Link to="/services">
+                  <Button variant="outline" className="w-full">Learn More</Button>
                 </Link>
               </div>
-              
-              {/* Finance */}
-              <div className="bg-white rounded-lg p-6 text-center hover:shadow-md transition-shadow">
-                <div className="h-12 w-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-3">Finance</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Innovative financing solutions and investment structuring.
+              <div className="text-center p-6 rounded-lg border">
+                <h3 className="text-xl font-semibold mb-3">Financing Advisory</h3>
+                <p className="text-muted-foreground mb-4">
+                  Innovative financing solutions and transaction structuring for sustainable projects.
                 </p>
-                <Link to="/services" className="text-accent hover:text-accent/80 font-medium text-sm">
-                  Learn more →
+                <Link to="/services">
+                  <Button variant="outline" className="w-full">Learn More</Button>
                 </Link>
               </div>
-              
-              {/* Transactions */}
-              <div className="bg-white rounded-lg p-6 text-center hover:shadow-md transition-shadow">
-                <div className="h-12 w-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-3">Transactions</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  End-to-end transaction support for infrastructure projects.
+              <div className="text-center p-6 rounded-lg border">
+                <h3 className="text-xl font-semibold mb-3">IFI Transactions</h3>
+                <p className="text-muted-foreground mb-4">
+                  Support for International Financial Institution engagements and compliance.
                 </p>
-                <Link to="/services" className="text-accent hover:text-accent/80 font-medium text-sm">
-                  Learn more →
-                </Link>
-              </div>
-              
-              {/* Climate */}
-              <div className="bg-white rounded-lg p-6 text-center hover:shadow-md transition-shadow">
-                <div className="h-12 w-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-3">Climate</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Climate resilience and adaptation strategies.
-                </p>
-                <Link to="/services" className="text-accent hover:text-accent/80 font-medium text-sm">
-                  Learn more →
+                <Link to="/services">
+                  <Button variant="outline" className="w-full">Learn More</Button>
                 </Link>
               </div>
             </div>
           </div>
         </section>
-        
-        {/* CTA Section */}
-        <section className="py-20">
-          <div className="container">
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Let's discuss how we can help transform your infrastructure challenges into opportunities.
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Link to="/contact">
-                  <Button className="bg-accent hover:bg-accent/90 text-white px-6 py-3">
-                    Contact Us
-                  </Button>
-                </Link>
-                <Link to="/services">
-                  <Button variant="outline" className="px-6 py-3">
-                    View Services
-                  </Button>
-                </Link>
-              </div>
+
+        {/* Call to Action */}
+        <section className="py-20 bg-accent text-white">
+          <div className="container text-center">
+            <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Project?</h2>
+            <p className="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
+              Partner with SRI for expert advisory services that drive sustainable infrastructure development and measurable impact.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact">
+                <Button className="bg-white text-accent hover:bg-white/90 px-6 py-3 text-base">
+                  Start Your Project
+                </Button>
+              </Link>
+              <Link to="/services">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-accent px-6 py-3 text-base">
+                  Explore Services
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
