@@ -6,7 +6,6 @@ import { Suspense, lazy } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NotFoundPage from "./pages/NotFoundPage";
-import environment from "./lib/environment";
 
 // Lazy load page components for code splitting
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -28,7 +27,7 @@ const App = () => (
   <TooltipProvider>
     <Toaster />
     <Sonner />
-    <BrowserRouter basename={environment.basePath}>
+    <BrowserRouter>
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
