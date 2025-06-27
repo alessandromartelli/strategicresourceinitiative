@@ -8,7 +8,8 @@ export default defineConfig(({ mode }) => ({
     react(),
   ],
   
-  base: mode === 'production' ? '/geo-impact-web-forge/' : '/',
+  // Remove base path for Vercel deployment
+  base: "/",
 
   server: {
     host: "localhost",
