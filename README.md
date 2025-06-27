@@ -1,82 +1,90 @@
-# Strategic Resources Initiatives (SRI) Website
+# SRI Consulting Website
 
-A modern, optimized React website built with Vite, TypeScript, and Tailwind CSS.
-
-## Features
-
-- Modern, responsive design
-- Professional SRI branding
-- Comprehensive service pages
-- Privacy Policy and Terms of Service
-- SEO optimized
+A modern, responsive website for SRI Consulting built with React, TypeScript, and Tailwind CSS.
 
 ## 🚀 Quick Start
 
-### Development
 ```bash
 # Install dependencies
 npm install
 
 # Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
-The website will open automatically at `http://localhost:3000`
 
-### Production
-```bash
-# Build and preview production version
-npm run start
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS + Tailwind Animate
+- **UI Components**: Custom components with Radix UI primitives
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **Routing**: React Router DOM
+- **Deployment**: Vercel
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components (Button, Input, etc.)
+│   ├── Header.tsx      # Site header with navigation
+│   ├── Footer.tsx      # Site footer
+│   └── ...
+├── pages/              # Page components
+│   ├── HomePage.tsx    # Landing page
+│   ├── AboutPage.tsx   # About page
+│   ├── ServicesPage.tsx # Services page
+│   └── ...
+├── hooks/              # Custom React hooks
+├── lib/                # Utilities and helpers
+└── App.tsx            # Main app component with routing
 ```
 
-## 📦 Optimized Build
+## 🌐 Pages
 
-The project includes several optimizations:
+- **Home** (`/`) - Landing page with company overview
+- **About** (`/about`) - Company information and team
+- **Services** (`/services`) - Service offerings with tabs
+- **Sectors** (`/sectors`) - Industry sectors with accordions
+- **Contact** (`/contact`) - Contact form and information
+- **Privacy Policy** (`/privacy-policy`) - Privacy policy
+- **Terms of Service** (`/terms-of-service`) - Terms of service
 
-- **Code Splitting**: Automatic chunk splitting for better loading performance
-- **Minification**: Terser-based minification with console removal in production
-- **Asset Optimization**: Optimized asset handling and inline limits
-- **Dependency Pre-bundling**: Key dependencies are pre-bundled for faster dev startup
+## 🎨 Design System
 
-### Build Output
-- `react-vendor`: React core libraries (~140KB)
-- `router`: React Router (~20KB)  
-- `ui-lib`: Radix UI components (~67KB)
-- `animations`: Framer Motion & GSAP (~182KB)
-- `charts`: Recharts & D3 (~412KB)
-- `three`: Three.js (~461KB)
+The website uses a custom design system with:
+- Consistent color palette
+- Typography scale
+- Spacing system
+- Component variants
+- Responsive breakpoints
 
-## 🛠 Scripts
+## 📱 Features
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run start` - Build and start production server
-- `npm run lint` - Run ESLint
+- ✅ Fully responsive design
+- ✅ Modern UI with smooth animations
+- ✅ SEO optimized
+- ✅ Fast loading times
+- ✅ Accessible components
+- ✅ TypeScript for type safety
+- ✅ ESLint for code quality
 
-## 🏗 Architecture
+## 🚀 Deployment
 
-- **Framework**: React 18 with TypeScript
-- **Build Tool**: Vite 5 with SWC
-- **Styling**: Tailwind CSS with custom components
-- **UI Components**: Radix UI primitives
-- **Routing**: React Router v6
-- **Animations**: Framer Motion & GSAP
-- **Charts**: Recharts & D3
-- **3D Graphics**: Three.js
+This project is optimized for Vercel deployment:
 
-## 🎯 Performance Features
+1. Connect your GitHub repository to Vercel
+2. Vercel will automatically detect the Vite configuration
+3. Build and deployment happen automatically on push
 
-- Lazy loading for route components
-- Optimized chunk splitting
-- Asset compression and optimization
-- Modern ES modules
-- Fast refresh in development
-- Production-ready minification
+## 📄 License
 
-## 🌐 Deployment
-
-The website is optimized for deployment on any static hosting service. The build output in `dist/` can be served directly.
-
-This site is deployed on Vercel with automatic deployments from the main branch.
-
-Built for Strategic Resources Initiatives
+This project is proprietary software for SRI Consulting.
