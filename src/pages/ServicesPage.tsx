@@ -12,8 +12,8 @@ const ServicesPage = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/50"></div>
           <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1920&q=80" 
-            alt="Strategic advisory services"
+            src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=1920&q=80" 
+            alt="Infrastructure services"
             className="w-full h-full object-cover"
           />
         </div>

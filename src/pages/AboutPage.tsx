@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import CTA from "@/components/CTA";
 
@@ -16,8 +17,8 @@ const AboutPage = () => {
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary to-transparent opacity-70"></div>
           <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80" 
-            alt="Strategic advisory team"
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80" 
+            alt="Infrastructure landscape"
             className="w-full h-full object-cover"
           />
         </div>
@@ -106,8 +107,8 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" 
-                  alt="Strategic consulting meeting"
+                  src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=800&q=80" 
+                  alt="Strategic planning meeting"
                   className="w-full h-full object-cover rounded-lg shadow-md"
                 />
               </div>

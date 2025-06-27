@@ -106,8 +106,7 @@ const SectorsPage = () => {
                   Geotechnical & Geomechanical Asset Management
                 </h2>
                 <p className="text-lg text-gray-700 mb-8">
-                  Comprehensive management of geological and geotechnical assets to ensure infrastructure stability, 
-                  safety, and longevity in complex terrains and challenging conditions.
+                  Geotechnical and geomechanical asset management is a systematic approach to maintaining, inspecting, and planning for the repair or replacement of geotechnical assets like slopes, embankments, and retaining walls. It involves assessing the current condition of these assets, identifying potential risks, and developing strategies to ensure their continued safety and functionality over their lifespan. This includes monitoring their performance, managing data, and making informed decisions about maintenance and repair.
                 </p>
                 
                 <Accordion type="single" collapsible className="w-full">
@@ -154,8 +153,8 @@ const SectorsPage = () => {
               </div>
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80" 
-                  alt="Strategic consulting and planning"
+                  src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=800&q=80" 
+                  alt="Bridge infrastructure"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -170,8 +169,7 @@ const SectorsPage = () => {
                   Sustainable Mobility Systems
                 </h2>
                 <p className="text-lg text-gray-700 mb-8">
-                  Development and optimization of transportation networks that balance efficiency, accessibility, 
-                  and environmental sustainability to serve communities while reducing carbon footprints.
+                  Sustainable mobility systems focus on transportation that minimizes environmental impact, promotes social equity, and ensures economic viability. This means reducing emissions, optimizing resource use, and providing accessible and affordable transport options for all, while considering the needs of future generations.
                 </p>
                 
                 <Accordion type="single" collapsible className="w-full">
@@ -210,8 +208,8 @@ const SectorsPage = () => {
               </div>
               <div className="md:order-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" 
-                  alt="Strategic advisory session"
+                  src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" 
+                  alt="Modern electric trains"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -226,8 +224,7 @@ const SectorsPage = () => {
                   Climate-Resilient Infrastructure
                 </h2>
                 <p className="text-lg text-gray-700 mb-8">
-                  Design and adaptation of infrastructure systems to withstand and recover from climate-related 
-                  stresses and shocks, ensuring long-term functionality and service delivery.
+                  Climate-resilient infrastructure refers to infrastructure designed, built, and managed to withstand the impacts of climate change. This includes adapting to extreme weather events, rising sea levels, and other climate-related challenges. The goal is to ensure infrastructure can function reliably despite these changes and recover quickly from disruptions.
                 </p>
                 
                 <Accordion type="single" collapsible className="w-full">
@@ -266,8 +263,8 @@ const SectorsPage = () => {
               </div>
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80" 
-                  alt="Climate advisory and strategy"
+                  src="https://images.unsplash.com/photo-1609766098152-3b2d1b9b4e4a?auto=format&fit=crop&w=800&q=80" 
+                  alt="Coastal protection dike"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -322,8 +319,8 @@ const SectorsPage = () => {
               </div>
               <div className="md:order-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" 
-                  alt="Strategic analysis and consulting"
+                  src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=800&q=80" 
+                  alt="Sustainable mining operations"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -378,8 +375,8 @@ const SectorsPage = () => {
               </div>
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
-                  alt="Financial advisory and analysis"
+                  src="https://images.unsplash.com/photo-1441974231531-c4628902d4a3?auto=format&fit=crop&w=800&q=80" 
+                  alt="Forest for ESG and climate finance"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -394,8 +391,7 @@ const SectorsPage = () => {
                   Capacity Building & Institutional Strengthening
                 </h2>
                 <p className="text-lg text-gray-700 mb-8">
-                  Development of human and institutional capabilities to effectively plan, implement, and manage 
-                  sustainable infrastructure projects and programs.
+                  Capacity building and institutional strengthening are intertwined processes that focus on enhancing the ability of individuals, organizations, and societies to achieve their goals. Capacity building primarily involves developing the skills, knowledge, and resources of individuals and groups, while institutional strengthening focuses on improving the systems, structures, and policies of organizations and institutions. Both are crucial for sustainable development and effective governance.
                 </p>
                 
                 <Accordion type="single" collapsible className="w-full">
@@ -434,8 +430,8 @@ const SectorsPage = () => {
               </div>
               <div className="md:order-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" 
-                  alt="Strategic development consulting"
+                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=800&q=80" 
+                  alt="Community development and capacity building"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>

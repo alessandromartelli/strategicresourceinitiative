@@ -16,8 +16,8 @@ const HomePage = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <img
-            src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1920&q=80" 
-            alt="Strategic business advisory meeting"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80" 
+            alt="Infrastructure development"
             className="w-full h-full object-cover"
           />
         </div>
@@ -95,56 +95,6 @@ const HomePage = () => {
                 <p className="text-muted-foreground">
                   Results-oriented approach with measurable impact on project success and financial returns.
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Our Approach Section */}
-        <section className="py-20 bg-secondary">
-          <div className="container">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Our Approach</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                A comprehensive methodology that ensures strategic alignment, risk mitigation, and sustainable outcomes for complex infrastructure projects.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              <div className="text-center p-6">
-                <div className="h-16 w-16 rounded-full bg-accent/10 flex items-center justify-center mb-4 mx-auto">
-                  <svg className="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Assessment</h3>
-                <p className="text-sm text-muted-foreground">Comprehensive analysis of opportunities and challenges</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="h-16 w-16 rounded-full bg-accent/10 flex items-center justify-center mb-4 mx-auto">
-                  <svg className="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2zm8 0h-2a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Strategy</h3>
-                <p className="text-sm text-muted-foreground">Development of tailored strategic frameworks</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="h-16 w-16 rounded-full bg-accent/10 flex items-center justify-center mb-4 mx-auto">
-                  <svg className="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Implementation</h3>
-                <p className="text-sm text-muted-foreground">Collaborative execution with stakeholder alignment</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="h-16 w-16 rounded-full bg-accent/10 flex items-center justify-center mb-4 mx-auto">
-                  <svg className="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Monitoring</h3>
-                <p className="text-sm text-muted-foreground">Continuous oversight and performance optimization</p>
               </div>
             </div>
           </div>
