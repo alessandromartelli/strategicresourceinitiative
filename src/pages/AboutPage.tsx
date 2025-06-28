@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import CTA from "@/components/CTA";
 
@@ -41,8 +40,8 @@ const AboutPage = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-merriweather text-primary font-bold mb-8">Our Mission</h2>
             <p className="text-lg text-gray-700 mb-12">
-              We collaborate with infrastructure firms and blended finance institutions to develop and finance 
-              sustainable projects that adhere to global standards.
+              We collaborate with infrastructure firms, mining companies, and blended finance institutions to develop and finance 
+              sustainable projects that adhere to global standards across infrastructure and mining sectors.
             </p>
             
             <h3 className="text-2xl font-merriweather text-primary font-bold mb-6">Our Competitive Edge</h3>
@@ -63,7 +62,7 @@ const AboutPage = () => {
                 </div>
                 <h4 className="text-lg font-semibold mb-2">SDG Impact Modelling</h4>
                 <p className="text-gray-700">
-                  Quantifiable assessment of how infrastructure projects contribute to Sustainable Development Goals.
+                  Quantifiable assessment of how infrastructure and mining projects contribute to Sustainable Development Goals and responsible resource development.
                 </p>
               </div>
               
@@ -116,12 +115,12 @@ const AboutPage = () => {
                 <h3 className="text-xl font-merriweather font-bold mb-4">Holistic Solutions</h3>
                 <p className="text-gray-700 mb-6">
                   We design comprehensive strategies that address the technical, environmental, social, and financial 
-                  aspects of infrastructure development, ensuring long-term sustainability and resilience.
+                  aspects of infrastructure and mining development, ensuring long-term sustainability and resilience.
                 </p>
                 <h3 className="text-xl font-merriweather font-bold mb-4">Impact-Focused</h3>
                 <p className="text-gray-700">
                   All our advisory services are centered on achieving measurable impacts aligned with global sustainability 
-                  standards and the specific development goals of the regions where we operate.
+                  standards and responsible mining practices in the regions where we operate.
                 </p>
               </div>
             </div>
@@ -136,7 +135,7 @@ const AboutPage = () => {
             Work With Our Team of Experts
           </h2>
           <p className="max-w-2xl mx-auto mb-8">
-            Discover how our strategic approach can unlock new opportunities for your infrastructure projects.
+            Discover how our strategic approach can unlock new opportunities for your infrastructure and mining projects.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <CTA type="discovery" />

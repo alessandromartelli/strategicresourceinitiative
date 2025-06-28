@@ -27,7 +27,7 @@ const ServicesPage = () => {
               Strategic Advisory for Transformational Impact
             </p>
             <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto">
-              Comprehensive expertise across the infrastructure development lifecycle, 
+              Comprehensive expertise across the infrastructure and mining development lifecycle, 
               from initial concept to successful implementation and operation.
             </p>
           </div>
@@ -42,7 +42,7 @@ const ServicesPage = () => {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">Service Areas</h2>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
                 We provide end-to-end advisory services across three core areas of expertise,
-                each designed to maximize project success and development impact.
+                each designed to maximize project success and development impact in infrastructure and mining sectors.
               </p>
             </div>
 
@@ -82,7 +82,7 @@ const ServicesPage = () => {
                     </h2>
                     <p className="text-gray-700 text-base sm:text-lg">
                       Comprehensive strategic guidance from concept to implementation, 
-                      ensuring projects align with development objectives and deliver sustainable impact.
+                      ensuring infrastructure and mining projects align with development objectives and deliver sustainable impact.
                     </p>
                   </div>
                   
@@ -91,8 +91,8 @@ const ServicesPage = () => {
                       {[
                         {
                           title: "Strategic Planning & Assessment",
-                          description: "Sector strategy development, technical due diligence, and comprehensive feasibility studies to establish project viability and alignment with development goals.",
-                          services: ["Sector Strategy Development", "Technical Due Diligence", "Feasibility Studies", "Project Screening"]
+                          description: "Sector strategy development, technical due diligence, and comprehensive feasibility studies for infrastructure and mining projects to establish viability and alignment with development goals.",
+                          services: ["Infrastructure & Mining Strategy Development", "Technical Due Diligence", "Feasibility Studies", "Project Screening"]
                         },
                         {
                           title: "Climate & Sustainability Integration",
@@ -101,8 +101,8 @@ const ServicesPage = () => {
                         },
                         {
                           title: "Resource & Asset Management",
-                          description: "Resource assessment, asset optimization, and lifecycle management strategies for efficient infrastructure development and operation.",
-                          services: ["Resource Assessment", "Asset Optimization", "Lifecycle Management", "Performance Monitoring"]
+                          description: "Resource assessment, asset optimization, and lifecycle management strategies for efficient infrastructure and mining development and operation.",
+                          services: ["Mineral Resource Assessment", "Infrastructure Asset Optimization", "Mining Lifecycle Management", "Performance Monitoring"]
                         },
                         {
                           title: "Institutional Development",

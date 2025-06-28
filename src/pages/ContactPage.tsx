@@ -226,8 +226,8 @@ const ContactPage = () => {
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm">
               <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">What types of projects do you typically work on?</h3>
               <p className="text-gray-700 text-sm sm:text-base">
-                We specialize in infrastructure and resource projects across multiple sectors, including transportation, 
-                mining, energy, and water. Our focus is on projects that contribute to sustainable development and climate resilience.
+                We specialize in infrastructure and mining projects across multiple sectors, including transportation, 
+                mining operations, critical minerals extraction, energy infrastructure, and water systems. Our focus is on projects that contribute to sustainable development and climate resilience.
               </p>
             </div>
             
@@ -252,6 +252,22 @@ const ContactPage = () => {
               <p className="text-gray-700 text-sm sm:text-base">
                 We operate globally, with particular focus on Europe, Africa, Asia, and Latin America. Our team 
                 has experience working in over 27 countries across diverse geographical and regulatory contexts.
+              </p>
+            </div>
+            
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm">
+              <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Do you work with mining companies?</h3>
+              <p className="text-gray-700 text-sm sm:text-base">
+                Yes, we have extensive experience in the mining sector, particularly in critical minerals, sustainable mining practices, 
+                resource assessment, and mine development financing. We help mining companies align with ESG standards and access international funding.
+              </p>
+            </div>
+            
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm">
+              <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">What is your experience with critical minerals?</h3>
+              <p className="text-gray-700 text-sm sm:text-base">
+                We provide specialized advisory on critical raw materials essential for the clean energy transition, including lithium, 
+                cobalt, rare earth elements, and other strategic minerals. Our services cover supply chain development, resource assessment, and sustainable extraction practices.
               </p>
             </div>
           </div>

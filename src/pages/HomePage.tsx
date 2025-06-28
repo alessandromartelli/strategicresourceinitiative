@@ -25,10 +25,10 @@ const HomePage = () => {
         <div className="container relative z-10 px-4 sm:px-6">
           <div className={`max-w-3xl transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h1 className="font-merriweather text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-              Strategic Infrastructure Advisory
+              Strategic Infrastructure & Mining Advisory
             </h1>
             <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 max-w-2xl">
-              Expert advisory services for sustainable infrastructure development, innovative financing solutions, and strategic project implementation.
+              Expert advisory services for sustainable infrastructure development, mining operations, innovative financing solutions, and strategic project implementation.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link to="/contact">
@@ -67,7 +67,7 @@ const HomePage = () => {
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Sector Expertise</h3>
                 <p className="text-sm sm:text-base text-muted-foreground">
-                  Specialized knowledge across infrastructure, mining, mobility, and climate resilience sectors.
+                  Specialized knowledge across infrastructure, mining, critical minerals, mobility, and climate resilience sectors.
                 </p>
               </div>
               
@@ -114,7 +114,7 @@ const HomePage = () => {
                 <div className="flex-grow">
                   <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Sector Advisory</h3>
                   <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
-                    Expert guidance on sector strategy, technical due diligence, and project development.
+                    Expert guidance on infrastructure and mining sector strategy, technical due diligence, and project development.
                   </p>
                 </div>
                 <Link to="/services" className="mt-auto">
@@ -152,7 +152,7 @@ const HomePage = () => {
           <div className="container text-center px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Ready to Transform Your Project?</h2>
             <p className="text-base sm:text-lg mb-6 sm:mb-8 text-white/90 max-w-2xl mx-auto">
-              Partner with SRI for expert advisory services that drive sustainable infrastructure development and measurable impact.
+              Partner with SRI for expert advisory services that drive sustainable infrastructure and mining development with measurable impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/contact">
