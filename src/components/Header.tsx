@@ -135,7 +135,7 @@ const Header = () => {
       
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-white/95 backdrop-blur-md">
+        <div className="lg:hidden fixed inset-0 z-50 bg-white shadow-lg">
           <div className="container mx-auto pt-20 pb-8">
             <div className="absolute top-4 right-4">
               <Button
