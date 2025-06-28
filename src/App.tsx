@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CookieBanner from "./components/CookieBanner";
 import NotFoundPage from "./pages/NotFoundPage";
 
 // Lazy load page components for code splitting
@@ -46,6 +47,7 @@ const App = () => (
           </Suspense>
         </main>
         <Footer />
+        <CookieBanner />
       </div>
     </BrowserRouter>
   </TooltipProvider>

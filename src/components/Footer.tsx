@@ -92,29 +92,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      
-      {/* Cookie Consent Banner */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-border p-4 shadow-lg z-50">
-        <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            This website uses cookies to ensure you get the best experience on our website.
-          </p>
-          <div className="flex gap-4">
-            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors 
-                             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 
-                             disabled:opacity-50 disabled:pointer-events-none ring-offset-background 
-                             bg-accent text-accent-foreground hover:bg-accent/90 h-9 px-4">
-              Accept All
-            </button>
-            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors 
-                             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 
-                             disabled:opacity-50 disabled:pointer-events-none ring-offset-background 
-                             border border-input hover:bg-accent hover:text-accent-foreground h-9 px-4">
-              Manage Preferences
-            </button>
-          </div>
-        </div>
-      </div>
     </footer>
   );
 };
