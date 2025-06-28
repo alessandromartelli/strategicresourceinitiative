@@ -1,4 +1,5 @@
 {
+  "name": "strategic-resource-initiative",
   "rewrites": [
     {
       "source": "/((?!favicon\\.svg|sri-favicon\\.svg|assets/).*)",
