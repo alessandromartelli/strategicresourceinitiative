@@ -17,6 +17,20 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -135,9 +149,19 @@ const Header = () => {
       
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-white shadow-lg">
-          <div className="container mx-auto pt-20 pb-8">
-            <div className="absolute top-4 right-4">
+        <div className="lg:hidden fixed inset-0 z-[60] bg-white shadow-lg overflow-y-auto">
+          <div className="min-h-full flex flex-col">
+            {/* Header area with close button */}
+            <div className="flex-shrink-0 h-20 flex items-center justify-between px-4 border-b border-gray-100">
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center">
+                  <span className="text-lg font-bold tracking-tight">S</span>
+                </div>
+                <div className="ml-3">
+                  <div className="font-bold text-xl tracking-tight text-gray-900">SRI</div>
+                  <div className="text-xs font-medium tracking-wide text-gray-600">Strategic Resources Initiative</div>
+                </div>
+              </div>
               <Button
                 variant="ghost"
                 size="icon"
@@ -149,28 +173,31 @@ const Header = () => {
               </Button>
             </div>
             
-            <div className="space-y-1 mb-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={`block px-4 py-3 text-lg font-medium rounded-lg transition-colors duration-300 ${
-                    isActive(link.path)
-                      ? "text-primary bg-primary/5"
-                      : "text-gray-700 hover:text-primary hover:bg-gray-50"
-                  }`}
-                  onClick={closeMobileMenu}
-                >
-                  {link.label}
-                </Link>
-              ))}
+            {/* Menu content */}
+            <div className="flex-1 px-4 py-6">
+              <div className="space-y-1 mb-8">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`block px-4 py-3 text-lg font-medium rounded-lg transition-colors duration-300 ${
+                      isActive(link.path)
+                        ? "text-primary bg-primary/5"
+                        : "text-gray-700 hover:text-primary hover:bg-gray-50"
+                    }`}
+                    onClick={closeMobileMenu}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+              
+              <Link to="/contact" onClick={closeMobileMenu}>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
-            
-            <Link to="/contact" onClick={closeMobileMenu}>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                Contact Us
-              </Button>
-            </Link>
           </div>
         </div>
       )}
