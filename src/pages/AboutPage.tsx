@@ -40,11 +40,11 @@ const AboutPage = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-merriweather text-primary font-bold mb-8">Our Mission</h2>
             <p className="text-lg text-gray-700 mb-12">
-              We collaborate with infrastructure firms, mining companies, and blended finance institutions to develop and finance 
+              We collaborate with infrastructure firms, mining companies, and IFI finance institutions to develop and finance 
               sustainable projects that adhere to global standards across infrastructure and mining sectors.
             </p>
             
-            <h3 className="text-2xl font-merriweather text-primary font-bold mb-6">Our Competitive Edge</h3>
+            <h3 className="text-2xl font-merriweather text-primary font-bold mb-6">Our Competitive Advantage</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               <div className="bg-gray-50 p-8 rounded-lg shadow-sm">
                 <div className="h-12 w-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -52,7 +52,7 @@ const AboutPage = () => {
                 </div>
                 <h4 className="text-lg font-semibold mb-2">Blended-Finance Know-How</h4>
                 <p className="text-gray-700">
-                  Expert knowledge in structuring complex financing solutions that combine public, private, and philanthropic capital.
+                  Expert knowledge in structuring complex financing solutions that combine public and private capital.
                 </p>
               </div>
               
@@ -60,9 +60,9 @@ const AboutPage = () => {
                 <div className="h-12 w-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                   <span className="text-primary text-2xl font-bold">2</span>
                 </div>
-                <h4 className="text-lg font-semibold mb-2">SDG Impact Modelling</h4>
+                <h4 className="text-lg font-semibold mb-2">Quantified SDG Impact Modeling</h4>
                 <p className="text-gray-700">
-                  Quantifiable assessment of how infrastructure and mining projects contribute to Sustainable Development Goals and responsible resource development.
+                  Comprehensive analysis including debt service coverage ratios, revenue projections, operational KPIs, risk-adjusted returns, and compliance with IFI lending requirements - providing a complete picture of project bankability.
                 </p>
               </div>
               

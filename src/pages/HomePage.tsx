@@ -28,7 +28,7 @@ const HomePage = () => {
               Strategic Infrastructure & Mining Advisory
             </h1>
             <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 max-w-2xl">
-              Expert advisory services for sustainable infrastructure development, mining operations, innovative financing solutions, and strategic project implementation.
+              We turn complex infrastructure and mining ventures into investment-ready opportunities through proven blended-finance strategies, ESG compliance, and strategic advisory services that deliver measurable ROI for global clients.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link to="/contact">
@@ -54,7 +54,7 @@ const HomePage = () => {
             <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-16">
               <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Why Choose SRI</h2>
               <p className="text-base sm:text-lg text-muted-foreground">
-                Strategic advisory expertise for complex infrastructure challenges.
+                Proven track record delivering $500M+ in project financing across 27 countries.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
@@ -67,7 +67,7 @@ const HomePage = () => {
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Sector Expertise</h3>
                 <p className="text-sm sm:text-base text-muted-foreground">
-                  Specialized knowledge across infrastructure, mining, critical minerals, mobility, and climate resilience sectors.
+                  Deep technical expertise in critical minerals, mining, mobility, and climate-resilient infrastructure that international financiers trust for due diligence and risk assessment.
                 </p>
               </div>
               
@@ -93,7 +93,7 @@ const HomePage = () => {
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Strategic Approach</h3>
                 <p className="text-sm sm:text-base text-muted-foreground">
-                  Results-oriented approach with measurable impact on project success and financial returns.
+                  Direct relationships with World Bank, EIB, AfDB, and IFC
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ const HomePage = () => {
             <div className="text-center mb-8 sm:mb-16">
               <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Our Services</h2>
               <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive advisory services across the infrastructure development lifecycle.
+                End-to-end advisory services that transform projects from concept to successful financing and implementation.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
@@ -114,7 +114,7 @@ const HomePage = () => {
                 <div className="flex-grow">
                   <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Sector Advisory</h3>
                   <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
-                    Expert guidance on infrastructure and mining sector strategy, technical due diligence, and project development.
+                    Comprehensive technical, financial, and ESG due diligence that meets IFI standards
                   </p>
                 </div>
                 <Link to="/services" className="mt-auto">
@@ -129,14 +129,14 @@ const HomePage = () => {
                   </p>
                 </div>
                 <Link to="/services" className="mt-auto">
-                  <Button variant="outline" className="w-full text-sm sm:text-base">Learn More</Button>
+                  <Button variant="outline" className="w-full text-sm sm:text-base">Structure Your Deal</Button>
                 </Link>
               </div>
               <div className="text-center p-6 sm:p-8 rounded-lg border hover:shadow-lg transition-shadow h-full flex flex-col">
                 <div className="flex-grow">
-                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">IFI Transactions</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">IFI Relationship Management</h3>
                   <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
-                    Support for International Financial Institution engagements and compliance.
+                    Direct access to World Bank, EIB, AfDB decision-makers - leveraging our relationships to accelerate your project approvals and funding.
                   </p>
                 </div>
                 <Link to="/services" className="mt-auto">
@@ -150,14 +150,14 @@ const HomePage = () => {
         {/* Call to Action */}
         <section className="py-12 sm:py-20 bg-accent text-white">
           <div className="container text-center px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Ready to Transform Your Project?</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Turn Your Vision Into Funded Reality</h2>
             <p className="text-base sm:text-lg mb-6 sm:mb-8 text-white/90 max-w-2xl mx-auto">
-              Partner with SRI for expert advisory services that drive sustainable infrastructure and mining development with measurable impact.
+              Join the 20+ infrastructure and mining projects we've helped secure funding. Get your complimentary strategic assessment and discover how our proven methods can unlock financing for your next venture.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/contact">
                 <Button className="bg-white text-accent hover:bg-white/90 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base w-full sm:w-auto">
-                  Start Your Project
+                  Get Free Strategic Assessment
                 </Button>
               </Link>
               <Link to="/services">
